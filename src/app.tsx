@@ -38,12 +38,7 @@ export default function App({ children }: AppProps) {
     </Fab>
   );
 
-  return (
-    <ThemeProvider>
-      {children}
-      {githubButton()}
-    </ThemeProvider>
-  );
+  return <ThemeProvider>{children}</ThemeProvider>;
 }
 
 // ----------------------------------------------------------------------
